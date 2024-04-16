@@ -8,11 +8,11 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 export default function Home() {
     return (
         <main>
-            <video className="h-full absolute-center object-cover blur-sm overflow-hidden" autoPlay loop muted src="/Memorial To The Hollow Knight.mp4" />
+            <video className="h-full absolute-center object-cover blur-sm overflow-hidden" autoPlay loop muted src="Memorial To The Hollow Knight.mp4" />
 
             <div className="absolute-center sm:w-1/3 w-[85%] h-1/2 bg-indigo-800 bg-opacity-85 rounded-lg border-[5px] border-indigo-500 p-4">
                 <div className="border-[2px] p-2 border-indigo-500 rounded-lg flex flex-row items-center gap-4">
-                    <Image src="/avatar.jpg" alt="Profile Picture" width={100} height={100} className="rounded-full lg:w-[100px] lg:h-[100px] w-[50px] h-[50px] " />
+                    <Image src="avatar.jpg" alt="Profile Picture" width={100} height={100} className="rounded-full lg:w-[100px] lg:h-[100px] w-[50px] h-[50px] " />
                     <div className="flex flex-col">
                         <h1>MrDiamondDog</h1>
                         <p className="text-gray-400">he/him</p>
