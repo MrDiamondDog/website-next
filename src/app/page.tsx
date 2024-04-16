@@ -8,7 +8,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 export default function Home() {
     return (
         <main>
-            <video className="h-full absolute-center object-cover blur-sm overflow-hidden" autoPlay loop muted src="Memorial_To_The_Hollow_Knight.mp4" />
+            <video className="h-full absolute-center object-cover blur-sm overflow-hidden" autoPlay loop muted src="Memorial_to_the_Hollow_Knight.mp4" />
 
             <div className="absolute-center sm:w-1/3 w-[85%] h-1/2 bg-indigo-800 bg-opacity-85 rounded-lg border-[5px] border-indigo-500 p-4">
                 <div className="border-[2px] p-2 border-indigo-500 rounded-lg flex flex-row items-center gap-4">
