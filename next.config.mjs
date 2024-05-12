@@ -7,7 +7,8 @@ const nextConfig = {
             }
         ],
         unoptimized: true
-    }
+    },
+    basePath: "/",
 };
 
 export default nextConfig;
