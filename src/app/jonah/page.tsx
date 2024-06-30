@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from "react";
 
+global.HTMLImageElement = typeof window === "undefined" ? Object : window.HTMLImageElement as any;
+
 export default function JonahPage() {
     const canvas = useRef<HTMLCanvasElement>(null);
 
@@ -9,7 +11,7 @@ export default function JonahPage() {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
 
-    const jonahImage = new Image();
+    const jonahImage = new HTMLImageElement();
     jonahImage.src = "/jonah.webp";
 
     useEffect(() => {
