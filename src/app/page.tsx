@@ -8,7 +8,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 export default function Home() {
     return (
         <main>
-            <video className="h-full absolute-center object-cover blur-sm overflow-hidden" autoPlay loop muted src="Memorial_to_the_Hollow_Knight.mp4" />
+            <video className="w-full h-full absolute-center object-fill blur-sm overflow-hidden" autoPlay loop muted src="Memorial_to_the_Hollow_Knight.mp4" />
 
             <div className="absolute-center sm:w-1/3 w-[85%] h-1/2 bg-indigo-800 bg-opacity-85 rounded-lg border-[5px] border-indigo-500 p-4">
                 <div className="border-[2px] p-2 border-indigo-500 rounded-lg flex flex-row items-center gap-4">
@@ -28,19 +28,6 @@ export default function Home() {
                             </Tooltip>
                         </div>
                     </div>
-                </div>
-
-                <div className="flex flex-row gap-2 mt-4">
-                    <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="NextJS" />
-                    <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind" />
-                    <img src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white" alt="Prisma" />
-                </div>
-
-                <div className="whitespace-pre-wrap mt-4">
-                    Hello!
-                    <br />
-                    I am a computer guy and I make stuff a lot, most go unfinished sadly
-                    <br />
                 </div>
             </div>
         </main>
