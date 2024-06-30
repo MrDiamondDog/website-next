@@ -1,17 +1,16 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useEffect, useRef } from "react";
 
-global.HTMLImageElement = typeof window === "undefined" ? Object : window.HTMLImageElement as any;
-
-export default function JonahPage() {
+function JonahPage() {
     const canvas = useRef<HTMLCanvasElement>(null);
 
     function numBetween(min: number, max: number) {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
 
-    const jonahImage = new HTMLImageElement();
+    const jonahImage = new window.Image();
     jonahImage.src = "/jonah.webp";
 
     useEffect(() => {
@@ -105,3 +104,5 @@ export default function JonahPage() {
         </div>
     </>);
 }
+
+export default dynamic(() => Promise.resolve(JonahPage), { ssr: false });
